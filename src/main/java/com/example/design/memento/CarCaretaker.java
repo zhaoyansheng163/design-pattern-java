@@ -1,5 +1,6 @@
 package com.example.design.memento;
 
+//备忘录模式
 public class CarCaretaker {
 
 	public static void main(String s[]) {
