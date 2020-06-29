@@ -7,7 +7,8 @@ import java.util.HashMap;
  * 客户端
  * 给定待计算表达式、各个变量的值
  */
-//参考：
+//https://blog.csdn.net/Keiissland/article/details/104900609
+//源码：https://github.com/zhaoyansheng163/design-pattern-java/tree/master/src/main/java/com/example/design/Interpreter
 public class Client {
 
     public static void main(String[] args) {
