@@ -1,4 +1,4 @@
-package com.example.design.memento;
+package com.example.design.mementoDel;
 
 //备忘录模式
 public class CarCaretaker {
