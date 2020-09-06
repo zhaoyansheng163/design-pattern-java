@@ -2,7 +2,7 @@ package com.example.design.ObserverPatternPriceChange;
 
 import java.util.Observable;
 
-public class Product extends Observable {
+public class ProductObservable extends Observable {
     private String name;
     private float price;
 
