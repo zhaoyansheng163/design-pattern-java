@@ -62,8 +62,8 @@ public class DateFamatTest {
     }
 }
 
-
-attention:注意下，月份是从0开始的，要Calendar.MONTH+1才可以的
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(new Date());
-        System.out.println("System   Date:   " + cal.get(Calendar.MONTH + 1));
+//
+//attention:注意下，月份是从0开始的，要Calendar.MONTH+1才可以的
+//        Calendar cal = Calendar.getInstance();
+//        cal.setTime(new Date());
+//        System.out.println("System   Date:   " + cal.get(Calendar.MONTH + 1));

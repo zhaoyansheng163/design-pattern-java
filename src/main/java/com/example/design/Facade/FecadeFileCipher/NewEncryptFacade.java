@@ -2,14 +2,14 @@
 package com.example.design.Facade.FecadeFileCipher;
 
 public class NewEncryptFacade extends AbstractEncryptFacade {
-	private FileReader reader;
-	private NewCipherMachine cipher;
-	private FileWriter writer;
+	private designpatterns.facade.FileReader reader;
+	private designpatterns.facade.NewCipherMachine cipher;
+	private designpatterns.facade.FileWriter writer;
 	
 	public NewEncryptFacade() {
-		reader = new FileReader();
-		cipher = new NewCipherMachine();
-		writer = new FileWriter();
+		reader = new designpatterns.facade.FileReader();
+		cipher = new designpatterns.facade.NewCipherMachine();
+		writer = new designpatterns.facade.FileWriter();
 	}
 	
 	public void fileEncrypt(String fileNameSrc, String fileNameDes) {
