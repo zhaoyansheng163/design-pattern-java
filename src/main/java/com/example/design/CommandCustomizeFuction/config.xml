@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config>
+	<className>com.example.design.CommandCustomizeFuction.HelpCommand</className>
+    <className>com.example.design.CommandCustomizeFuction.MinimizeCommand</className>
+</config>
