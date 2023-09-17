@@ -14,3 +14,6 @@ package com.example.design.strategyautowired;
 //添加bean name之后
 //测试方式：http://127.0.0.1:8080/toPayAutoWHtml?payCode=aa
 //  http://127.0.0.1:8080/toPayAutoWHtml?payCode=yy
+
+// 对于那种paycode的枚举值已经是确定的，不能更改，例如存量系统01表示支付宝 02表示银联
+// 因为01 02不能作为componetnt的beanname，因此可以通过增加一个支付类型的枚举类，把01翻译成alipay，通过01获取beanname时，转换一下即可
