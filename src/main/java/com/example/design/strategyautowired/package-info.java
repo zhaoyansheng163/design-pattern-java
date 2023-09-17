@@ -10,3 +10,7 @@ package com.example.design.strategyautowired;
 
 //测试方式：http://127.0.0.1:8080/toPayAutoWHtml?payCode=aliPayAutoWStrategy
 //  http://127.0.0.1:8080/toPayAutoWHtml?payCode=yinLianAutoWPayStrategy
+
+//添加bean name之后
+//测试方式：http://127.0.0.1:8080/toPayAutoWHtml?payCode=aa
+//  http://127.0.0.1:8080/toPayAutoWHtml?payCode=yy

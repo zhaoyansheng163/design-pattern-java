@@ -4,7 +4,7 @@ import com.example.design.strategyautowired.PayStrategyAutoW;
 import org.springframework.stereotype.Component;
 
 
-@Component
+@Component("yy")
 public class YinLianAutoWPayStrategy implements PayStrategyAutoW {
     public String toPayHtml() {
         return "调用银联支付接口...";
