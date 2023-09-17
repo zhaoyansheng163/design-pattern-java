@@ -1,7 +1,7 @@
-package com.example.design.strategy;
+package com.example.design.strategyautowired;
 
 
-public interface PayStrategy {
+public interface PayStrategyAutoW {
 
     /**
      *  策略模式共同算法的骨架
