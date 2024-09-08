@@ -1,6 +1,8 @@
 package com.example.design.AdapterLogin.service;
 
 import com.example.design.AdapterLogin.dto.UserInfo;
+import com.example.design.BridgeLogin.Mapper.UserMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,14 +13,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserAdapterService {
 
-//    @Autowired
-//    private UserMapper userRepo;
+    @Autowired
+    private UserMapper userRepo;
 
     public String login(String account, String password) {
-//        UserInfo userInfo = userRepo.findByNameAndPassword(account, password);
-//        if (null == userInfo) {
-//            return "account / password ERROR!";
-//        }
+        UserInfo userInfo = userRepo.findByNameAndPassword(account, password);
+        if (null == userInfo) {
+            return "account / password ERROR!";
+        }
         return "Login Success";
     }
 
@@ -26,12 +28,12 @@ public class UserAdapterService {
         if (checkUserExists(userInfo.getUserName())) {
             throw new RuntimeException("User already registered.");
         }
-        //userRepo.insert(userInfo);
+        userRepo.insert(userInfo);
         return "Register Success";
     }
 
     public boolean checkUserExists(String username) {
-        //UserInfo user = userRepo.findByUserName(username);
-        return false ;
+        UserInfo user = userRepo.findByUserName(username);
+        return null != user ;
     }
 }
